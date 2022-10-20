@@ -33,7 +33,7 @@
   		</li>
 
   		<li class="nav-item" role="presentation">
-    		<button class="nav-link" id="pills-services-tab" data-toggle="pill" data-target="#pills-services" type="button" role="tab" aria-controls="pills-services" aria-selected="false">Services</button>
+    		<button class="nav-link" id="pills-tools-tab" data-toggle="pill" data-target="#pills-tools" type="button" role="tab" aria-controls="pills-tools" aria-selected="false">Tools</button>
   		</li>
 
   		<li class="nav-item" role="presentation">
@@ -57,7 +57,7 @@
   				  <p class="lead">Future Full Stack Developer</p>
   				  <hr class="my-4">
   				  <p>I am still a work in progress, like this web profile!</p>
-  				  <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+  				  <a class="btn btn-primary btn-lg" href="https://www.facebook.com/messages/t/alissam1692/" target="_blank" role="button">Learn more</a>
   				</div>
   			</div>
   		</div>
@@ -68,8 +68,8 @@
   			<div class="container-fluid min-vh-100">
   				<div class="d-flex">
   					<img src="./images/logo2.png" class="col-5 mt-5">
-  					<div class="col-4 offset-1 pt-5 text-justify">
-  					<h2 class="alissamae">Alissa Mae Benigay</h2>
+  					<div class="col-5 offset-1 pt-5 text-justify">
+  					<h2 class="alissamae pt-4">Alissa Mae Benigay</h2>
   					<p class="alissamae p-1">I have always wanted to work with computers since I was young and fell in love with Software Development when it was introduced to my class in High School.</p>
   					<p class="alissamae p-1">I pursued my dream and did great in my programming classes in college and got my Bachelor's degree in Information Technology. However, due to some unforeseen circumstances, I wasn't able to choose the career path that I've been aiming for.</p>
   					<p class="alissamae p-1">I got a chance to work closely with Software Developers and even though I've wanted to be one of them, I feel like I'm still fortunate enough to be able to work and learn with them. Over the years, I've given up on my dream then I found Zuitt. Now, I am back on track and ready to become a Full Stack Developer through Zuitt Online Bootcamp.</p>
@@ -79,23 +79,127 @@
   		</div>
 <!-- End of Profile -->
 
-<!-- Services Content -->
-  		<div class="tab-pane fade" id="pills-services" role="tabpanel" aria-labelledby="pills-services-tab">Services Content</div>
-<!-- End of Content -->
+<!-- Tools Content -->
+  		<div class="tab-pane fade" id="pills-tools" role="tabpanel" aria-labelledby="pills-tools-tab">
+ 
+<!-- Core Tools Section Start -->
+		<div class="text-center">
+  			<h3>Core Tools</h3>
+
+  			<div class="d-flex p-3 justify-content-center align-items-center flex-column">
+  				<div>
+  					<img width="100" src="images/logo-html5.png"/>
+  				</div>
+  				<div>
+  					 <img width="100" src="images/logo-css3.png"/>
+  					 <img width="100" src="images/logo-javascript.png"/>
+  				</div>
+  			</div>
+<!-- Core Tools Section End -->
+  					
+<!-- Other Tools Section Start -->
+  			<h3>Other Tools</h3>
+  				<div class="d-flex flex-md-column">
+  					<div>
+  					    <img width="100" src="images/logo-mongodb.png"/>
+  					    <img width="100" src="images/logo-nodejs.png"/>
+  					    <img width="100" src="images/logo-expressjs.png"/>
+  					    <img width="100" src="images/logo-react.png"/>
+  					    <img width="100" src="images/logo-heroku.png"/>
+  					</div>
+  					<div>
+  					    <img width="100" src="images/logo-git.png"/>
+  					    <img width="100" src="images/logo-sublime-text-3.png"/>
+  					    <img width="100" src="images/logo-postman.png"/>
+  					    <img width="100" src="images/logo-gitlab-ci-cd.png"/>
+  					</div>
+  				</div>
+  		</div>
+  	</div>
+
+<!-- End of Tools -->
 
 <!-- Projects Content -->
   		<div class="tab-pane fade" id="pills-projects" role="tabpanel" aria-labelledby="pills-projects-tab">Projects Content</div>
 <!-- End of Projects -->
 
 <!-- Contact Content -->
-  		<div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">Contact Content</div>
+  		<div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+  			<div class="text-center">
+  				<div>
+  					<div class="container-fluid min-vh-300 p-4">
+  						<h2>Contact Me</h2>
+  					
+  					<div class="container p-3">
+  						<form class="container-fluid contactform col-md-8 col-xl-4 p-3 text-light">
+  						  <div class="form-group">
+  						      <label for="inputname">Name</label>
+  						      <input type="text" class="form-control" id="inputname" placeholder="Name">
+  						    </div>
+  						  <div class="form-group">
+  						    <label for="emailadd">Email address</label>
+  						    <input type="email" class="form-control" id="emailadd" placeholder="name@example.com">
+  						  </div>
+
+  						  <div class="form-group">
+  						  	<label for="number">Contact Number</label>
+  						      <input type="text" class="form-control" id="number" placeholder="Contact Number">
+  						  </div>
+
+  						  <div class="form-group">
+  						    <label for="exampleFormControlSelect1">Concern</label>
+  						    <select class="form-control" id="exampleFormControlSelect1">
+  						      <option>Quotation</option>
+  						      <option>Appointment</option>
+  						      <option>Follow-up</option>
+  						    </select>
+  						  </div>
+  						  <div class="form-group">
+  						    <label for="message">Message</label>
+  						    <textarea class="form-control" id="message" rows="3"></textarea>
+  						  </div>
+
+  						  <div class="form-group">
+  						  <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#myModal">
+  						    Send Email
+  						  </button>
+
+  						  <!-- The Modal -->
+  						  <div class="modal text-dark" tabindex="-1" id="myModal">
+  						    <div class="modal-dialog">
+  						      <div class="modal-content">
+  						        <div class="modal-header">
+  						          <h5 class="modal-title">Thank you for contacting us</h5>
+  						          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+  						            <span aria-hidden="true">&times;</span>
+  						          </button>
+  						        </div>
+  						        <div class="modal-body">
+  						          <p>Message Sent Successfully</p>
+  						        </div>
+  						        <div class="modal-footer">
+  						          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+  						        </div>
+  						      </div>
+  						    </div>
+  						  </div>		
+  						  </div>
+  						</form>
+  					</div>
+
+  					</div>
+  				</div>
+  			</div>
+  		</div>
 <!-- End of Contact -->
 	</div>
 	</div>
 <!-- End of Content -->
 
 <!-- Footer -->
-	<footer class="container-fluid text-center fixed-bottom">
+	<footer class="container-fluid text-center fixed-bottom p-1">
+		<a href="https://facebook.com/alissam1692" target="_blank" class="text-dark pr-3">Facebook</a>
+		<span class="pr-3">|</span>
 		<span>All Rights Reserved</span>
 	</footer>
 <!-- Bootstrap Script -->

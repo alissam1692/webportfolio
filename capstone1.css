@@ -3,15 +3,27 @@ body{
 }
 
 .tab-content{
-	background-color: #FFF6EA;
+	background-color: #DFD3C3;
 }
 
 .nav{
-	background-color: #FFEEEE;
+	background-color: #F8EDE3;
+}
+
+.contactform{
+	background-color: #7D6E83;
+}
+
+.form-control{
+	font-family: 'Red Hat Text', sans-serif;
+}
+
+.modal{
+	font-family: 'Red Hat Text', sans-serif;
 }
 
 footer{
-	background-color: #EBD8C3;
+	background-color: #D0B8A8;
 }
 
 .alissam{
