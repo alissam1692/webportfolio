@@ -23,6 +23,7 @@
 
 <body>
 <!-- Start of Navigation -->
+<div>
 	<ul class="nav nav-pills p-3 sticky-top" id="pills-tab" role="tablist">
   		<li class="nav-item mr-auto" role="presentation">
     		<button class="nav-link active" id="pills-home-tab" data-toggle="pill" data-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Home</button>
@@ -47,13 +48,13 @@
 <!-- End of Navigation -->
 
 <!-- Start of Content -->
-	<div class="tab-content" id="pills-tabContent">
+<div class="tab-content min-vh-100" id="pills-tabContent">
  
 <!-- Home Content -->
-  		<div class="tab-pane fade show active pt-5" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-  			<div class="container-fluid min-vh-100 pt-5 col-8">
+  		<div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+  			<div class="col-md-8 offset-md-2 col-lg-6 offset-lg-3 col-10 offset-1 pt-5 pb-5">
   				<div class="jumbotron">
-  				  <h1 class="display-2 alissam">Hi, I'm Alissa!</h1>
+  				  <h1 class="alissam">Hi, I'm Alissa!</h1>
   				  <p class="lead">Future Full Stack Developer</p>
   				  <hr class="my-4">
   				  <p>I am still a work in progress, like this web profile!</p>
@@ -65,10 +66,10 @@
 
 <!-- Profile Content -->
   		<div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-  			<div class="container-fluid vh-100 pt-3">
-  				<div class="d-flex">
-  					<img src="./images/logo2.png" class="col-4 mt-5 offset-1 h-100">
-  					<div class="col-4 offset-1 pt-5 text-justify">
+  			<div class="container-fluid pt-3">
+  				<div class="d-lg-flex d-md-column">
+  					<img src="./images/logo2.png" class="col-lg-4 offset-lg-1 col-md-6 offset-md-3 mt-5">
+  					<div class="col-lg-5 offset-lg-1 col-md-10 offset-md-1 pt-5 text-justify">
   					<h2 class="alissamae">Alissa Mae Benigay</h2>
   					<p class="alissamae p-1">I have always wanted to work with computers since I was young and fell in love with Software Development when it was introduced to my class in High School.</p>
   					<p class="alissamae p-1">I pursued my dream and did great in my programming classes in college then got my Bachelor's degree in Information Technology. However, due to some unforeseen circumstances, I wasn't able to choose the career path that I've been aiming for.</p>
@@ -81,47 +82,39 @@
 
 <!-- Tools Content -->
   		<div class="tab-pane fade" id="pills-tools" role="tabpanel" aria-labelledby="pills-tools-tab">
- 
-<!-- Core Tools Section Start -->
-		<div class="text-center min-vh-100 pt-5">
-  			<h3>Core Tools</h3>
-
-  			<div class="d-flex p-3 justify-content-center align-items-center flex-column">
-  				<div>
-  					<img width="100" src="images/logo-html5.png"/>
-  				</div>
-  				<div>
-  					 <img width="100" src="images/logo-css3.png"/>
-  					 <img width="100" src="images/logo-javascript.png"/>
-  				</div>
+  			<div class="offset-lg-3 offset-md-2">
+  				<ul class="list-unstyled">
+  				  <li class="media">
+  				    <img width="150" src="./images/logo-html5.png"  class="mt-2" alt="HTML5">
+  				    <div class="media-body col-6">
+  				      <h4 class="mt-4 mb-1">HTML5</h4>
+  				      <p class="text-justify">This is where you can create a webpage from a scratch. It is very challenging but I believe it would be much easier once you get used to it.</p>
+  				    </div>
+  				  </li>
+  				  
+  				  <li class="media my-4">
+  				    <img src="./images/logo-css3.png" class="mr-3" alt="CSS">
+  				    <div class="media-body col-6">
+  				      <h4 class="mt-4 mb-1">CSS</h4>
+  				      <p class="text-justify">This is probably the second best thing about Front-end Development. This is where modifications in the appearance of your website happens. Just make sure that you don't have typographical error or it will never work.</p>
+  				    </div>
+  				  </li>
+  				  
+  				  <li class="media">
+  				    <img src="./images/logo-bootstrap.png" class="mr-3" alt="Bootstrap">
+  				    <div class="media-body col-6">
+  				      <h5 class="mt-4 mb-1">Bootstrap</h5>
+  				      <p>Bootstrap is very helpful. I believe using Bootstrap in developing a website is more efficient. It is also easier to make modifications using bootstrap</p>
+  				    </div>
+  				  </li>
+  				</ul>
   			</div>
-<!-- Core Tools Section End -->
-  					
-<!-- Other Tools Section Start -->
-  			<h3>Other Tools</h3>
-  				<div class="d-flex flex-md-column">
-  					<div>
-  					    <img width="100" src="images/logo-mongodb.png"/>
-  					    <img width="100" src="images/logo-nodejs.png"/>
-  					    <img width="100" src="images/logo-expressjs.png"/>
-  					    <img width="100" src="images/logo-react.png"/>
-  					    <img width="100" src="images/logo-heroku.png"/>
-  					</div>
-  					<div>
-  					    <img width="100" src="images/logo-git.png"/>
-  					    <img width="100" src="images/logo-sublime-text-3.png"/>
-  					    <img width="100" src="images/logo-postman.png"/>
-  					    <img width="100" src="images/logo-gitlab-ci-cd.png"/>
-  					</div>
-  				</div>
-  		</div>
-  	</div>
-
+  		</div>	
 <!-- End of Tools -->
 
 <!-- Projects Content -->
-  		<div class="tab-pane fade vh-100" id="pills-projects" role="tabpanel" aria-labelledby="pills-projects-tab">
-  			<div class="justify-content-around d-flex text-light">
+  		<div class="tab-pane fade" id="pills-projects" role="tabpanel" aria-labelledby="pills-projects-tab">
+  			<div class="justify-content-around d-lg-flex d-md-column text-light">
   				<div class="card col-md-3 col-8 offset-2 offset-md-0 mb-3 mt-5">
   					  <img src="./images/f45.png" class="card-img-top mt-3" alt="F45 Training logo">
   					  <div class="card-body">
@@ -154,20 +147,25 @@
 
 <!-- Contact Content -->
   		<div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
-  			<div class="container-fluid text-center pt-5">
-  			<h2>Come visit my office or send me an email</h2>
-  			</div>
-  			<div class="text-center vh-100">
-  				
-  					<section class="container-fluid d-flex offset-1">
-  						<div class="mapouter mt-3">
-  							<div class="gmap_canvas border mt-3"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=Bukidnon%20philippines&t=&z=9&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://123movies-to.org"></a><br><style>.mapouter{position:relative;text-align:right;height:400px;width:400px;}</style><a href="https://www.embedgooglemap.net"></a><style>.gmap_canvas {overflow:hidden;background:none!important;height:400px;width:400px;}</style></div>
-  							<h5 class="text-center">Location: Bukidnon, Philippines</h5>
-  							<h5 class="text-center">Telephone number: 0123456789</h5>
+  				<div class="container-fluid d-flex min-vh-100">
+<!-- GOOGLE MAP API -->
+  					<div class="mapouter pt-5">
+  						<div class="gmap_canvas border mt-5 offset-2">
+  							<iframe width="400" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=Bukidnon%20philippines&t=&z=9&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+  							<a href="https://123movies-to.org"></a><br>
+  							<style>.mapouter{position:relative;text-align:right;height:400px;width:400px;}</style>
+  							<a href="https://www.embedgooglemap.net"></a>
+  							<style>.gmap_canvas {overflow:hidden;background:none!important;height:400px;width:400px;}</style>
   						</div>
+  							<h5>Location: Bukidnon, Philippines</h5>
+  							<h5>Telephone number: 0123456789</h5>
+  					</div>
+
+  					<div class="container">
+  						<h2 class="offset-4 pt-3">Contact Me</h2>
   					
-  					<div class="container-fluid">
-  						<form class="container-fluid contactform col-md-8 col-xl-6 p-3 text-light mt-3">
+  					<div class="container text-center">
+  						<form class="container-fluid contactform col-md-8 col-xl-6 p-3 text-light offset-4">
   						  <div class="form-group">
   						      <label for="inputname">Name</label>
   						      <input type="text" class="form-control" id="inputname" placeholder="Name">
@@ -178,13 +176,14 @@
   						  </div>
 
   						  <div class="form-group">
-  						    <label for="exampleFormControlSelect1">Concern</label>
-  						    <select class="form-control" id="exampleFormControlSelect1">
+  						    <label for="concern">Concern</label>
+  						    <select class="form-control" id="concern">
   						      <option>Quotation</option>
   						      <option>Appointment</option>
   						      <option>Follow-up</option>
   						    </select>
   						  </div>
+
   						  <div class="form-group">
   						    <label for="message">Message</label>
   						    <textarea class="form-control" id="message" rows="3"></textarea>
@@ -195,7 +194,7 @@
   						    Send Email
   						  </button>
 
-  						  <!-- The Modal -->
+  						  <!-- MODAL -->
   						  <div class="modal text-dark" tabindex="-1" id="myModal">
   						    <div class="modal-dialog">
   						      <div class="modal-content">
@@ -213,20 +212,17 @@
   						        </div>
   						      </div>
   						    </div>
-  						  </div>		
   						  </div>
+  						  <!-- End of Modal  -->
   						</form>
-  					</div>
-  					</section>
-
-  				
-  				</div>
-  			</div>
-  		</div>
+					</div>
+					</div>
+				</div>
+		</div>
 <!-- End of Contact -->
-	</div>
-	</div>
+</div>
 <!-- End of Content -->
+
 
 <!-- Footer -->
 	<footer class="container-fluid text-center fixed-bottom p-1">
@@ -234,6 +230,8 @@
 		<span class="pr-3">|</span>
 		<span>All Rights Reserved</span>
 	</footer>
+
+
 <!-- Bootstrap Script -->
 	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
