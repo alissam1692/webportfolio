@@ -27,9 +27,19 @@ footer{
 }
 
 .alissam{
-	font-family: 'Handlee', cursive
+	font-family: 'Handlee', cursive;
+	color:  #E6B325;
 }
 
 .alissamae{
 	font-family: 'Red Hat Text', sans-serif;
+}
+
+.card{
+	background-color: #9E7676;
+	font-family: 'Red Hat Text', sans-serif;
+}
+
+.f45links{
+	color: #FAF3E3;
 }
